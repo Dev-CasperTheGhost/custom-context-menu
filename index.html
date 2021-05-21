@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom context menu (Right click menu)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <p>Right click anywhere on the page for the menu to appear</p>
+
+    <!-- code for the menu -->
+    <div class="menu" id="menu">
+      <ul class="menu-links">
+        <li onclick="alert('Clicked on \'copy\'!')">Copy</li>
+        <li onclick="alert('Clicked on \'cut\'!')">Cut</li>
+        <li onclick="alert('Clicked on \'cool\'!')">Cool</li>
+        <li onclick="alert('Clicked on \'nice\'!')">Nice</li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --dark: #18191c;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+p {
+  margin: 2rem;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+
+  background: var(--dark);
+  width: 100%;
+  max-width: 10rem;
+
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-links li {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  list-style: none;
+  cursor: default;
+
+  transition: background 150ms;
+}
+
+.menu-links li:hover {
+  background: #212225;
+}
