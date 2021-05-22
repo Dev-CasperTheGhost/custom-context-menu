@@ -4,9 +4,14 @@ addEventListener("contextmenu", (e) => {
   // prevent default to not show the default menu
   e.preventDefault();
 
-  menu.style.display = "block";
-  menu.style.top = `${e.y}px`;
-  menu.style.left = `${e.x}px`;
+  menu.style.display = "none";
+
+  // allow the menu to animate
+  setTimeout(() => {
+    menu.style.display = "block";
+    menu.style.top = `${e.y}px`;
+    menu.style.left = `${e.x}px`;
+  }, 10);
 });
 
 addEventListener("click", (e) => {
